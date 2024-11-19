@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome Test",
+    "version": "0.0.1",
+    "description": "Chrome extension proof of concept",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.google.com/*"],
+            "js": ["./content_scripts/google.js"]
+        }
+    ]
+
+}
